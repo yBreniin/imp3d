@@ -31,12 +31,79 @@
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
+  gap: 10px 20px;
+  align-items: center;
+}
+
+.impcriado::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: red;
+  position: absolute;
+  top: 37px;
+  left: -4px;
 }
 
 .ano {
   position: absolute;
-  top: 20px;
+  top: 39px;
   left: -100px;
+  text-align: right;
+  width: 80px;
   color: #525252;
   font-size: 0.875rem;
+}
+
+.imp-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.imp-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.imp-teste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.imp-teste li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .informacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .informacao .subtitulo {
+    color: #141414;
+  }
+  .informacao-texto {
+    font-size: 1.25rem;
+  }
+  .ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .informacao {
+    grid-template-columns: 1fr;
+  }
 }
