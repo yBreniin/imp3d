@@ -1,0 +1,91 @@
+.exemplo {
+  background: #141414;
+  color: white;
+}
+
+.exemplo-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.exemplo .subtitulo {
+  color: #000;
+}
+
+.exemplo-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.exemplo-texto strong {
+  color: white;
+}
+
+.extras {
+  margin-bottom: 60px;
+}
+
+.exemplo-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.exemplo-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.extras h3::before {
+  background: url("../img/x.png") no-repeat center center;
+}
+
+.feito h3::before {
+  background: url("../img/x.png") no-repeat center center;
+}
+
+.exemplo-texto li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.exemplo-extra span {
+  color: #8f8f8f;
+  word-break: break-all;
+}
+
+.img li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .exemplo-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .exemplo .subtitulo {
+    color: white;
+  }
+
+  .exemplo-texto {
+    font-size: 1.25rem;
+  }
+}
